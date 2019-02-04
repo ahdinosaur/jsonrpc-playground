@@ -27,6 +27,6 @@ in the client output, you should see
 
 ```txt
 hello, dinosaur!
-``
+```
 
 yay! :heart:
