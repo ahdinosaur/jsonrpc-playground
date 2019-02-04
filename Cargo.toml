@@ -1,0 +1,14 @@
+[package]
+name = "jsonrpc-playground"
+version = "0.1.0"
+authors = ["Michael Williams <michael.williams@enspiral.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1"
+jsonrpc-core = "10"
+jsonrpc-http-server = "10"
+jsonrpc-pubsub = "10"
+jsonrpc-derive = "10"
+jsonrpc-client-core = "0.5"
+jsonrpc-client-http = "0.5"
