@@ -30,3 +30,31 @@ hello, dinosaur!
 ```
 
 yay! :heart:
+
+---
+
+you can also use `curl` as a client:
+
+```
+curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "method": "hello", "params": ["dinosaur"], "id":1 }' 127.0.0.1:5555
+```
+
+you should see
+
+```json
+{"jsonrpc":"2.0","result":"Hello, dinosaur!","id":1}
+```
+
+---
+
+now try the `error` method:
+
+```
+curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "method": "error", "params": ["dinosaur"], "id":1 }' 127.0.0.1:5555
+```
+
+you should see
+
+```json
+{"jsonrpc":"2.0","error":{"code":1,"message":"server::PlaygroundError","data":"a wild error appears for dinosaur"},"id":1}
+```

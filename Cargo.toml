@@ -5,6 +5,7 @@ authors = ["Michael Williams <michael.williams@enspiral.com>"]
 edition = "2018"
 
 [dependencies]
+failure = "0.1"
 serde = "1"
 jsonrpc-core = "10"
 jsonrpc-http-server = "10"
